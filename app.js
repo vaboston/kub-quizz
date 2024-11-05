@@ -25,12 +25,7 @@ app.post('/answer', async (req, res) => {
 
 
     if (question.reponse === answer) {
-	    res.send(`
-	        <div style="text-align: center; margin-top: 50px;">
-	            <h2>Bonne réponse!</h2>
-	            <a href='/'>Question suivante</a>
-	        </div>
-	    `);
+        res.render('correct'); // Rendre la vue correct.ejs
 	} else {
 	    // Récupération de la documentation Kubernetes en cas de mauvaise réponse
 	    res.send(`

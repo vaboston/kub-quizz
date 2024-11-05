@@ -95,3 +95,20 @@ a {
 a:hover {
     background-color: #45a049;
 }
+.correct-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; /* Vert */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    cursor: pointer;
+}
+
+.correct-button:hover {
+    background-color: #45a049; /* Couleur légèrement plus foncée au survol */
+}
+
