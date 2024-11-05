@@ -33,10 +33,6 @@ app.post('/answer', async (req, res) => {
 	    `);
 	} else {
 	    // Récupération de la documentation Kubernetes en cas de mauvaise réponse
-	    const docContent = await axios.get(question.docLink)
-	        .then(response => response.data.substring(0, 500)) // Limite de caractères pour l'affichage
-	        .catch(() => "Erreur lors de la récupération de la documentation.");
-	
 	    res.send(`
 	        <div style="text-align: center; margin-top: 50px;">
 	            <h2>Mauvaise réponse!</h2>
@@ -44,7 +40,8 @@ app.post('/answer', async (req, res) => {
 	            <p><strong>Réponse correcte:</strong> ${question.reponse}</p>
 	            <h3>Explication</h3>
 	            <p>${question.explication}</p>
-	            <p>${docContent}</p>
+	            <a href=${question.docLink}>${question.docLink}</a>
+		    <p></p>
 	            <a href='/'>Question suivante</a>
 	        </div>
 	    `);
