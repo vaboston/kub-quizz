@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Kubernetes</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>Mauvaise réponse!</h2>
+        <p><%= question %></p>
+        <p><strong>Réponse correcte:</strong> <%= reponse %></p>
+        <h3>Explication</h3>
+        <p><%= explication %></p>
+        <p><a href="<%= docLink %> class="correct-button"">Voir la documentation</a></p>
+        <p>
+            <a href="/" class="correct-button">Question suivante</a>
+        </p>
+    </div>
+</body>
+</html>

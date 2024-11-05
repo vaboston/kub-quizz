@@ -25,21 +25,14 @@ app.post('/answer', async (req, res) => {
 
 
     if (question.reponse === answer) {
-        res.render('correct'); // Rendre la vue correct.ejs
+            res.render('correct'); 
 	} else {
-	    // Récupération de la documentation Kubernetes en cas de mauvaise réponse
-	    res.send(`
-	        <div style="text-align: center; margin-top: 50px;">
-	            <h2>Mauvaise réponse!</h2>
-	            <p>${question.question}</p>
-	            <p><strong>Réponse correcte:</strong> ${question.reponse}</p>
-	            <h3>Explication</h3>
-	            <p>${question.explication}</p>
-	            <a href=${question.docLink}>${question.docLink}</a>
-		    <p></p>
-	            <a href='/'>Question suivante</a>
-	        </div>
-	    `);
+	    res.render('incorrect', {
+                question: question.question,
+                reponse: question.reponse,
+                explication: question.explication,
+                docLink: question.docLink
+    	    });
 	}	
 });
 
