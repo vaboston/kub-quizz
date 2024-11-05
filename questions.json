@@ -1,0 +1,292 @@
+[
+    {
+        "question": "Quelle commande est utilisée pour créer un pod dans Kubernetes?",
+        "choix": ["kubectl run", "kubectl create", "kubectl init"],
+        "reponse": "kubectl create",
+        "explication": "La commande 'kubectl create' est utilisée pour créer des ressources dans Kubernetes.",
+        "docLink": "https://kubernetes.io/docs/reference/kubectl/overview/"
+    },
+    {
+        "question": "Quelle est la commande pour lister tous les namespaces?",
+        "choix": ["kubectl get namespaces", "kubectl get ns", "kubectl list namespaces"],
+        "reponse": "kubectl get namespaces",
+        "explication": "La commande 'kubectl get namespaces' permet d'obtenir la liste des namespaces disponibles.",
+        "docLink": "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+    },
+    {
+        "question": "Quel composant Kubernetes est responsable du maintien de l'état souhaité pour les objets dans le cluster ?",
+        "choix": ["kubelet", "Controller Manager", "API Server", "Scheduler"],
+        "reponse": "Controller Manager",
+        "explication": "Le Controller Manager maintient l'état désiré en contrôlant les objets déclaratifs.",
+        "docLink": "https://kubernetes.io/docs/concepts/architecture/controller/"
+    },
+    {
+        "question": "Comment appelle-t-on un regroupement de conteneurs dans Kubernetes ?",
+        "choix": ["Cluster", "Pod", "Deployment", "Service"],
+        "reponse": "Pod",
+        "explication": "Un pod est l'unité de déploiement minimale dans Kubernetes.",
+        "docLink": "https://kubernetes.io/docs/concepts/workloads/pods/"
+    },
+    {
+        "question": "Quel est l'objectif principal d'Argo Workflows ?",
+        "choix": ["Déploiement d'applications", "Orchestration de workflows", "Gestion des secrets", "Surveillance de services"],
+        "reponse": "Orchestration de workflows",
+        "explication": "Argo Workflows est utilisé pour créer et orchestrer des workflows en conteneur.",
+        "docLink": "https://argoproj.github.io/argo-workflows/"
+    },
+    {
+        "question": "Quelle commande permet de décrire les détails d'un Pod existant dans Kubernetes ?",
+        "choix": ["kubectl describe pod", "kubectl get pod", "kubectl show pod", "kubectl inspect pod"],
+        "reponse": "kubectl describe pod",
+        "explication": "kubectl describe pod montre les détails spécifiques d'un pod dans Kubernetes.",
+        "docLink": "https://kubernetes.io/docs/reference/kubectl/"
+    },
+    {
+        "question": "Dans Argo CD, quel objet Kubernetes est utilisé pour configurer une application cible à déployer ?",
+        "choix": ["Workflow", "AppProject", "Application", "ConfigMap"],
+        "reponse": "Application",
+        "explication": "L'objet Application dans Argo CD définit la source, le destinataire, et d'autres configurations.",
+        "docLink": "https://argo-cd.readthedocs.io/en/stable/user-guide/architecture/"
+    },
+    {
+        "question": "Quel rôle a le kube-scheduler dans Kubernetes ?",
+        "choix": ["Maintenir l'état des objets", "Assurer la communication API", "Planifier les pods", "Contrôler les accès"],
+        "reponse": "Planifier les pods",
+        "explication": "Le kube-scheduler assigne des pods aux nœuds en fonction de ressources et de contraintes.",
+        "docLink": "https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/"
+    },
+    {
+        "question": "Quel objet Kubernetes expose un ensemble de pods sur un réseau ?",
+        "choix": ["Deployment", "Service", "Ingress", "ConfigMap"],
+        "reponse": "Service",
+        "explication": "Un service expose un ou plusieurs pods sur le réseau interne ou externe.",
+        "docLink": "https://kubernetes.io/docs/concepts/services-networking/service/"
+    },
+    {
+        "question": "Quelle balise de commande Argo Events est utilisée pour déclencher un workflow basé sur des événements ?",
+        "choix": ["EventSource", "TriggerTemplate", "TriggerPolicy", "EventTrigger"],
+        "reponse": "TriggerTemplate",
+        "explication": "TriggerTemplate permet de déclencher des actions spécifiques en réponse à des événements.",
+        "docLink": "https://argoproj.github.io/argo-events/"
+    },
+    {
+        "question": "Comment définit-on une stratégie de mise à jour progressive pour un Deployment dans Kubernetes ?",
+        "choix": ["A/B testing", "Blue/Green", "Rolling Update", "Red/Black"],
+        "reponse": "Rolling Update",
+        "explication": "Le déploiement progressif (Rolling Update) met à jour progressivement les répliques de pods.",
+        "docLink": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+    },
+    {
+        "question": "Quelle commande permet de lister tous les nodes dans un cluster Kubernetes ?",
+        "choix": ["kubectl get nodes", "kubectl describe nodes", "kubectl show nodes", "kubectl nodes list"],
+        "reponse": "kubectl get nodes",
+        "explication": "La commande 'kubectl get nodes' liste tous les nœuds du cluster.",
+        "docLink": "https://kubernetes.io/docs/reference/kubectl/overview/"
+    },
+    {
+        "question": "Dans Kubernetes, que fait le 'liveness probe' ?",
+        "choix": ["Vérifie l'état de disponibilité", "Assure l'accès réseau", "Redémarre les pods défaillants", "Contrôle les permissions"],
+        "reponse": "Redémarre les pods défaillants",
+        "explication": "Le 'liveness probe' vérifie la santé d'un pod et le redémarre si nécessaire.",
+        "docLink": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/"
+    },
+    {
+        "question": "Dans Argo CD, quel mécanisme permet de synchroniser les applications avec le code source ?",
+        "choix": ["SyncPolicy", "Helm", "Webhook", "Workflow"],
+        "reponse": "SyncPolicy",
+        "explication": "La 'SyncPolicy' dans Argo CD synchronise automatiquement les applications avec leur code source.",
+        "docLink": "https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/"
+    },
+    {
+        "question": "Dans Argo Workflows, qu'est-ce qu'un 'DAG' ?",
+        "choix": ["Un type de pipeline", "Une configuration réseau", "Un schéma de déploiement", "Un composant d'observabilité"],
+        "reponse": "Un type de pipeline",
+        "explication": "Un 'DAG' (Directed Acyclic Graph) permet de définir des tâches dépendantes dans un pipeline.",
+        "docLink": "https://argoproj.github.io/argo-workflows/"
+    },
+    {
+        "question": "Quel composant Kubernetes est le premier point d'entrée pour les requêtes d'administration ?",
+        "choix": ["kubelet", "API Server", "Controller Manager", "Scheduler"],
+        "reponse": "API Server",
+        "explication": "L'API Server est le point d'entrée principal pour la gestion du cluster.",
+        "docLink": "https://kubernetes.io/docs/concepts/overview/components/#kube-apiserver"
+    },
+    {
+        "question": "Qu'est-ce qu'un 'ConfigMap' dans Kubernetes ?",
+        "choix": ["Une méthode de mise en réseau", "Un objet de stockage de configuration", "Un gestionnaire de sécurité", "Une ressource d'observabilité"],
+        "reponse": "Un objet de stockage de configuration",
+        "explication": "Les ConfigMaps stockent les données de configuration non sensibles des applications.",
+        "docLink": "https://kubernetes.io/docs/concepts/configuration/configmap/"
+    },
+    {
+        "question": "Comment appelle-t-on le processus qui permet de maintenir les containers en fonction des besoins d'un cluster Kubernetes ?",
+        "choix": ["Load balancing", "Scaling", "Provisioning", "Scheduling"],
+        "reponse": "Scaling",
+        "explication": "Le 'scaling' ajuste dynamiquement le nombre de pods pour répondre aux besoins en ressources.",
+        "docLink": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#scaling-a-deployment"
+    },
+    {
+        "question": "Quelle est la différence entre un ReplicaSet et un Deployment dans Kubernetes ?",
+        "choix": [
+            "Un ReplicaSet n'existe pas",
+            "Un Deployment gère le ReplicaSet",
+            "Un ReplicaSet contrôle les déploiements",
+            "Les deux sont identiques"
+        ],
+        "reponse": "Un Deployment gère le ReplicaSet",
+        "explication": "Le Deployment est une couche supérieure pour gérer les ReplicaSets et les mises à jour des pods.",
+        "docLink": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+    },
+    {
+        "question": "Quel outil de Kubernetes permet de regrouper plusieurs pods pour des fins de réseau ou de configuration ?",
+        "choix": ["Pod", "Namespace", "Service", "Cluster"],
+        "reponse": "Service",
+        "explication": "Les Services permettent de grouper et exposer des ensembles de pods à l'intérieur ou à l'extérieur du cluster.",
+        "docLink": "https://kubernetes.io/docs/concepts/services-networking/service/"
+    },
+    {
+        "question": "Quelle commande permet d'obtenir des informations sur un Deployment spécifique ?",
+        "choix": [
+            "kubectl get deployments [nom]",
+            "kubectl describe deployment [nom]",
+            "kubectl list deployment [nom]",
+            "kubectl info deployment [nom]"
+        ],
+        "reponse": "kubectl describe deployment [nom]",
+        "explication": "La commande `kubectl describe` fournit des informations détaillées sur un Deployment spécifique.",
+        "docLink": "https://kubernetes.io/docs/reference/kubectl/overview/"
+    },
+    {
+        "question": "Dans Argo CD, qu'est-ce que le Sync Wave ?",
+        "choix": [
+            "Un mécanisme de synchronisation progressive",
+            "Un outil de déploiement multi-cluster",
+            "Une commande pour re-synchroniser des branches",
+            "Un trigger pour re-démarrer les pods"
+        ],
+        "reponse": "Un mécanisme de synchronisation progressive",
+        "explication": "Le Sync Wave dans Argo CD permet d'ordonner le déploiement de ressources dans une application.",
+        "docLink": "https://argo-cd.readthedocs.io/en/stable/user-guide/sync-waves/"
+    },
+    {
+        "question": "Comment Kubernetes détermine-t-il où déployer un Pod dans un cluster ?",
+        "choix": ["Via les ReplicaSets", "Grâce au kube-scheduler", "Par les ConfigMaps", "Via les Services"],
+        "reponse": "Grâce au kube-scheduler",
+        "explication": "Le kube-scheduler analyse la charge des nœuds pour optimiser la distribution des pods.",
+        "docLink": "https://kubernetes.io/docs/concepts/scheduling-eviction/"
+    },
+    {
+        "question": "Dans Argo Events, quel rôle joue un EventBus ?",
+        "choix": ["Gestion des logs", "Orchestration des workflows", "Distribution des événements", "Configuration des applications"],
+        "reponse": "Distribution des événements",
+        "explication": "L'EventBus dans Argo Events est le middleware assurant la distribution d'événements.",
+        "docLink": "https://argoproj.github.io/argo-events/concepts/event-bus/"
+    },
+    {
+        "question": "À quoi sert un Ingress dans Kubernetes ?",
+        "choix": [
+            "Contrôler l'accès réseau pour les services",
+            "Gérer les secrets et la configuration",
+            "Configurer la sécurité des pods",
+            "Contrôler les ressources des nœuds"
+        ],
+        "reponse": "Contrôler l'accès réseau pour les services",
+        "explication": "Ingress gère les connexions externes vers les services dans un cluster Kubernetes.",
+        "docLink": "https://kubernetes.io/docs/concepts/services-networking/ingress/"
+    },
+    {
+        "question": "Qu'est-ce que le kubelet dans Kubernetes ?",
+        "choix": ["Un orchestrateur de pods", "Un outil de logging", "L'agent de chaque nœud", "Un conteneur de réseau"],
+        "reponse": "L'agent de chaque nœud",
+        "explication": "Le kubelet est l'agent qui fonctionne sur chaque nœud dans le cluster et assure la gestion des pods et conteneurs.",
+        "docLink": "https://kubernetes.io/docs/concepts/architecture/nodes/"
+    },
+    {
+        "question": "Que permet le flag --prune lors d'un kubectl apply ?",
+        "choix": [
+            "Nettoyer les ressources non gérées",
+            "Définir une politique de rétention",
+            "Supprimer les pods non utilisés",
+            "Appliquer des changements de sécurité"
+        ],
+        "reponse": "Nettoyer les ressources non gérées",
+        "explication": "Le flag --prune permet de supprimer les ressources qui ne sont plus gérées par le fichier de configuration.",
+        "docLink": "https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply"
+    },
+    {
+        "question": "Quelle commande Argo CD permet de synchroniser une application manuellement ?",
+        "choix": ["argocd app resync", "argocd app sync", "argocd sync now", "argocd start sync"],
+        "reponse": "argocd app sync",
+        "explication": "La commande 'argocd app sync' permet de synchroniser manuellement une application avec son état dans Git.",
+        "docLink": "https://argo-cd.readthedocs.io/en/stable/user-guide/commands/argocd_app_sync/"
+    },
+    {
+        "question": "Qu'est-ce qu'un PersistentVolumeClaim (PVC) dans Kubernetes ?",
+        "choix": ["Un espace de stockage temporaire", "Une demande de volume persistant", "Une limite de stockage de pod", "Une extension de namespace"],
+        "reponse": "Une demande de volume persistant",
+        "explication": "Un PVC est une requête faite par un utilisateur pour obtenir de l'espace de stockage persistant, lié à un PersistentVolume (PV).",
+        "docLink": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/"
+    },
+    {
+        "question": "Dans Kubernetes, qu'est-ce qu'une ConfigMap ?",
+        "choix": ["Un volume persistant", "Une configuration de pod", "Un secret sécurisé", "Un outil de mise à l'échelle"],
+        "reponse": "Une configuration de pod",
+        "explication": "Une ConfigMap permet de stocker des configurations sous forme de paires clé-valeur et de les injecter dans des pods.",
+        "docLink": "https://kubernetes.io/docs/concepts/configuration/configmap/"
+    },
+    {
+        "question": "Dans Argo Workflows, qu'est-ce qu'un Step ?",
+        "choix": [
+            "Une instruction dans le workflow",
+            "Un script d'initialisation",
+            "Une tâche non ordonnée",
+            "Une variable de configuration"
+        ],
+        "reponse": "Une instruction dans le workflow",
+        "explication": "Un Step est une instruction d'exécution séquentielle ou conditionnelle dans un workflow.",
+        "docLink": "https://argoproj.github.io/argo-workflows/workflow-steps/"
+    },
+    {
+        "question": "Quel est le rôle d'un Namespace dans Kubernetes ?",
+        "choix": [
+            "Définir une limite de ressources",
+            "Séparer des environnements",
+            "Contrôler le trafic réseau",
+            "Configurer le stockage"
+        ],
+        "reponse": "Séparer des environnements",
+        "explication": "Les namespaces permettent de séparer les ressources logiquement dans un cluster pour faciliter la gestion et l'isolation.",
+        "docLink": "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+    },
+    {
+        "question": "Dans Argo Events, qu'est-ce qu'un Sensor ?",
+        "choix": [
+            "Un collecteur de données",
+            "Un déclencheur de workflows",
+            "Une source d'événements",
+            "Un système de surveillance"
+        ],
+        "reponse": "Un déclencheur de workflows",
+        "explication": "Un Sensor dans Argo Events est responsable de déclencher des workflows en réponse à des événements.",
+        "docLink": "https://argoproj.github.io/argo-events/concepts/sensors/"
+    },
+    {
+        "question": "Quelle annotation Kubernetes peut-on utiliser pour ajouter des labels lors de la création d'un pod ?",
+        "choix": ["metadata.annotations", "spec.selector", "metadata.labels", "spec.labels"],
+        "reponse": "metadata.labels",
+        "explication": "L'attribut 'metadata.labels' permet d'ajouter des labels, facilitant la sélection et la gestion des pods.",
+        "docLink": "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/"
+    },
+    {
+        "question": "Comment le kube-proxy fonctionne-t-il dans un cluster Kubernetes ?",
+        "choix": [
+            "Il configure les règles de réseau",
+            "Il crée des pods sur les nœuds",
+            "Il stocke les données des containers",
+            "Il gère les secrets de l'application"
+        ],
+        "reponse": "Il configure les règles de réseau",
+        "explication": "Le kube-proxy configure les règles réseau et équilibre le trafic vers les pods au sein du cluster.",
+        "docLink": "https://kubernetes.io/docs/concepts/services-networking/service/"
+    }
+]

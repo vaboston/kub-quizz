@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Kubernetes</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h2><%= question.question %></h2>
+    <form action="/answer" method="POST">
+        <input type="hidden" name="questionText" value="<%= question.question %>">
+        <% question.choix.forEach((option, index) => { %>
+            <input type="radio" name="answer" value="<%= option %>" id="option<%= index %>" class="choice-button">
+            <label for="option<%= index %>"><%= option %></label>
+        <% }) %>
+        <button type="submit">Valider</button>
+    </form>
+</body>
+</html>
